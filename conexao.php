@@ -7,5 +7,5 @@ $senha = 'root';
 try{     
     $conexao = new PDO($servidor, $usuario, $senha);
 }catch (PDOException $e){
-     die ('Erro ao se conectar ao banco.');
+     die ('Erro ao se conectar ao banco!');
 }
