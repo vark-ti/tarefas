@@ -1,11 +1,13 @@
 <?php
 
-$servidor = 'mysql:dbname=ecidade;host=127.0.0.1;';
+$servidor = '127.0.0.1';
 $usuario = 'root';
 $senha = 'root';
+$banco = 'ecidade';
 
-try{     
-    $conexao = new PDO($servidor, $usuario, $senha);
-}catch (PDOException $e){
-     die ('Erro ao se conectar ao banco!');
+$conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
+
+if(!$conexao){
+  echo "Não foi possível se conectar";
 }
+echo 'Conexão bem sucedida';
