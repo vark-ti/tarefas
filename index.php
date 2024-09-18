@@ -9,7 +9,7 @@
 <form action="salvar.php" method="post">
     <label>Título: </label><input type="text" name="titulo" id="titulo" required>
     <label>Descrição: </label><input type="text" name="descricao" id="descricao" required>
-    <label>Data de conclusão: </label><input type="date" name="data_conclusao" id="data_conclusao" required>
+    <label>Data: </label><input type="date" name="data" id="data" required>
     <button>Salvar</button>
 </form>
 <h2>Lista de Tarefas</h2>
