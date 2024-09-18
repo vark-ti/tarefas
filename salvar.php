@@ -11,7 +11,7 @@ $stmt = $conexao->prepare($sql);
 $stmt->execute();
 
 if($stmt){
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
 }else{
     echo "algum erro ocorreu";
